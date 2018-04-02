@@ -5,7 +5,7 @@ A setup to unit test / learn *raw* modern OpenGL ([3.3 / 4.1](https://support.ap
 ### Purposes
 
 * As requested by those who want to follow those online tuts in order to learn OpenGL first / parallel to exploring creative coding frameworks. But have issues setting up the combination of Xcode and modern OpenGL.
-* We love *oF* and *Cinder*, but sometimes testing or learning one new feature is hard as they are opinionated, having bootstrapping layer in front. Btw, don't forget *p5* if all you need is vert + frag test.
+* We love *oF* and *Cinder*, but sometimes testing / refreshing / learning some feature is hard as frameworks are opinionated by definition - having bootstrapping layer in front also means that when stuff does not work it's hard to know whose fault is it - yours or framework's (going step by step in *raw mode* will show it's yours ^_^). Btw, don't forget *p5* if all you need is vert + frag test.
 
 ## Building
 
@@ -70,7 +70,7 @@ install_name_tool -change <what to change> @executable_path/../Frameworks/libGLE
 install_name_tool -change <what to change> @executable_path/../Frameworks/libglfw.<version>.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$EXECUTABLE_NAME";
 ```
 
-* You can reuse the bult libraries in other projects too, as it will work when put into bundle *Frameworks*.
+* You can reuse the built libraries in other projects too, as it will work when put into bundle *Frameworks*.
 
 ## Static linking instead of dynamic
 
