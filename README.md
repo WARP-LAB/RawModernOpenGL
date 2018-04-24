@@ -31,11 +31,10 @@ brew install cmake
 ### Action
 
 * Clone this repo.
-* Run `bash dependencies/build_dependencies.sh` first. It will download *GLEW* and *GLFW* sources, build them and thus generate libraries in `dependencies/`.
+* Run `bash dependencies/build_dependencies.sh` first. It will download *GLM* as well as *GLEW* and *GLFW* sources, build the latter and thus generate libraries in `dependencies/`.
 * Open *Xcode* project, build & run.
 * One raw *main.cpp* file.
 * Atomise.
-* Add *GLM* (or whatever your tut uses).
 * Profit.
 
 ## Building GLEW and GLFW explained `build_dependencies.sh`

@@ -298,6 +298,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../dependencies/glew/include",
 					"$(PROJECT_DIR)/../dependencies/glfw/include",
+					"$(PROJECT_DIR)/../dependencies/glm",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -319,6 +320,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../dependencies/glew/include",
 					"$(PROJECT_DIR)/../dependencies/glfw/include",
+					"$(PROJECT_DIR)/../dependencies/glm",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

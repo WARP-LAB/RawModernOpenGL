@@ -1,7 +1,7 @@
 #!/bin/bash
 # written by kroko @ WARP
 
-echo "This will dowload GLEW and GLFW and build DYLIBS"
+echo "This will dowload GLM as well as GLEW and GLFW and build DYLIBS"
 
 command -v cmake >/dev/null 2>&1 || {
   echo >&2 "Cmake is only not OOB stuff required to build this (well, apart from compiler :)). Please do brew install cmake. Aborting."
@@ -22,7 +22,16 @@ PATH_DEP=$(dirname $PATH_SCRIPT)
 # Just clean up previous stuff if exists
 rm -rf $PATH_DEP/glew
 rm -rf $PATH_DEP/glfw
+rm -rf $PATH_DEP/glm
 rm -rf $PATH_DEP/tmp
+
+# ################################################################
+# Download GLM
+
+echo 🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷🔶🔷
+echo "Downloading GLM ..."
+
+git clone -b '0.9.8.5' --single-branch --depth 1 https://github.com/g-truc/glm.git $PATH_DEP/glm
 
 # ################################################################
 # Build GLEW
