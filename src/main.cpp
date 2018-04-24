@@ -186,7 +186,7 @@ int main(int argc, const char * argv[]) {
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GLFW_TRUE);
     glfwSetKeyCallback(window, keyClbk);
     glfwSetFramebufferSizeCallback(window, resizeClbk);
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
     glfwSetCursorPosCallback(window, mousePositionClbk);
     glfwSetCursorEnterCallback(window, mouseEnteredClbk);
     glfwSetMouseButtonCallback(window, mouseButtonClbk);
