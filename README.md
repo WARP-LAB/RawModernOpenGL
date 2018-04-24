@@ -34,7 +34,7 @@ brew install cmake
 * Run `bash dependencies/build_dependencies.sh` first. It will download *GLM* as well as *GLEW* and *GLFW* sources, build the latter and thus generate libraries in `dependencies/`.
 * Open *Xcode* project, build & run.
 * One raw *main.cpp* file.
-* Atomise.
+* Atomise and RAII it.
 * Profit.
 
 ## Building GLEW and GLFW explained `build_dependencies.sh`
@@ -86,4 +86,4 @@ And of course then you'll need to change *Link Binary With Libraries* phase to u
 
 ## Todo
 
-PR welcome to reorganise and add some more stuff (like key and mouse callbacks).
+PR welcome to add some more stuff to this barebones boilerplate.
