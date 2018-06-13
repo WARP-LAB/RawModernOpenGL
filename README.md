@@ -1,4 +1,4 @@
-# Raw Modern OpenGL 3.3+ on macOS
+# Raw Modernish OpenGL 4.1 on macOS
 
 A setup to unit test / learn *raw modernish* OpenGL ([4.1](https://support.apple.com/en-us/HT202823)) on macOS and Xcode.  
 
@@ -10,7 +10,7 @@ OpenGL 4.1 has no compute shaders (if you want to do *tiled forward* approach as
 
 ### Purposes
 
-* As requested by those who want to follow those online tuts in order to learn OpenGL first / parallel to exploring creative coding frameworks. But have issues setting up the combination of Xcode and modern OpenGL.
+* As requested by those who want to follow those online tuts in order to learn OpenGL first / parallel to exploring creative coding frameworks. But have issues setting up the combination of Xcode and modernish OpenGL.
 * We love *oF* and *Cinder*, but sometimes testing / refreshing / learning some feature is hard as frameworks are opinionated by definition - having bootstrapping layer in front also means that when stuff does not work it's hard to know whose fault is it - yours or framework's (going step by step in *raw mode* will show it's yours ^_^). Btw, don't forget *p5* if all you need is vert + frag test.
 
 ## Building
@@ -90,6 +90,3 @@ And of course then you'll need to change *Link Binary With Libraries* phase to u
 * Xcode 9.2 (project file set 6.3 compatible)
 * C++11 / C++14
 
-## Todo
-
-PR welcome to add some more stuff to this barebones boilerplate.
