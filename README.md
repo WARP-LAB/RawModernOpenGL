@@ -8,6 +8,12 @@ Use macOS just for OpenGL sketches.
 It is expected that OpenGL 4.5+ should be used as 4.1 is API from year 2010. Apple [does not care](http://preta3d.com/os-x-users-unite/) to update drivers.  
 OpenGL 4.1 has no compute shaders (if you want to do *tiled forward* approach as efficient as possible) and has overhead that newer versions try to solve. OpenGL 4.5 and BSD/nix (or even MSW if POSIX not needed or needed at level that WSL can provide) is a good combo - OpenGL means small bootstarping to get things (visuals for some installation) going.
 
+And not for long.
+
+> Apps built using OpenGL and OpenCL will continue to run in macOS 10.14, but these legacy technologies are deprecated in macOS 10.14. Games and graphics-intensive apps that use OpenGL should now adopt Metal. Similarly, apps that use OpenCL for computational tasks should now adopt Metal and Metal Performance Shaders.
+
+Thus abandon macOS for creative coding needs, switch to BSD/nix (or MSW + WSL), learn Vulkan.
+
 ### Purposes
 
 * As requested by those who want to follow those online tuts in order to learn OpenGL first / parallel to exploring creative coding frameworks. But have issues setting up the combination of Xcode and modernish OpenGL.
