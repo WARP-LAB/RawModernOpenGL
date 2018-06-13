@@ -1,6 +1,12 @@
 # Raw Modern OpenGL 3.3+ on macOS
 
-A setup to unit test / learn *raw* modern OpenGL ([3.3 / 4.1](https://support.apple.com/en-us/HT202823)) on macOS and Xcode.
+A setup to unit test / learn *raw modernish* OpenGL ([4.1](https://support.apple.com/en-us/HT202823)) on macOS and Xcode.  
+
+### Beware
+
+Use macOS just for OpenGL sketches.  
+It is expected that OpenGL 4.5+ should be used as 4.1 is API from year 2010. Apple [does not care](http://preta3d.com/os-x-users-unite/) to update drivers.  
+OpenGL 4.1 has no compute shaders (if you want to do *tiled forward* approach as efficient as possible) and has overhead that newer versions try to solve. OpenGL 4.5 and BSD/nix (or even MSW if POSIX not needed or needed at level that WSL can provide) is a good combo - OpenGL means small bootstarping to get things (visuals for some installation) going.
 
 ### Purposes
 
@@ -14,7 +20,7 @@ A setup to unit test / learn *raw* modern OpenGL ([3.3 / 4.1](https://support.ap
 * Using [GLEW](http://glew.sourceforge.net) for OpenGL [extension loading](https://www.khronos.org/opengl/wiki/OpenGL_Loading_Library) 
 * Using [GLFW](http://www.glfw.org) for windowing and eventing ([SDL](https://www.libsdl.org) and [SFML](https://www.sfml-dev.org) are alternatives, but unnecessary for the purpose. And please do not use *GLUT* (and *FreeGLUT* is unavailable on macOS).  
 
-These dependencies are built on demand as dynamic dylibs and are automatically included in the app bundle due to Xcode project settings. Just `bash dependencies/build_dependencies.sh`.
+These dependencies are built on demand as dynamic *dylibs* and are automatically included in the app bundle due to Xcode project settings. Just `bash dependencies/build_dependencies.sh`.
 
 If you wonder how this compares to frameworks
 
